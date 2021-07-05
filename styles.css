@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+:root {
+    --primary-color: #3B82F6;
+}
+
 body {
     font-family: 'Ubuntu', sans-serif;
 }
+
+hr {
+    margin: 2rem 0rem;
+}
+
+
+/* containers */
 
 .container {
     padding-left: 1rem;
@@ -11,4 +22,36 @@ body {
 .container-center {
     max-width: 600px;
     margin: auto;
+}
+
+
+/* links */
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+
+/* lists */
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
 }
