@@ -2,6 +2,7 @@
 :root {
     --primary-color: #3B82F6;
     --dark-gray: #6B7280;
+    --off-white: #D1D5DB;
 }
 
 body {
@@ -64,9 +65,9 @@ hr {
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
-    /* border-radius: 1rem; */
-    border-bottom-right-radius: 2rem;
-    border-top-left-radius: 2rem;
+    border-radius: 1rem;
+    /* border-bottom-left-radius: 2rem; */
+    /* border-top-left-radius: 2rem; */
 }
 
 .navigation .nav-brand {
@@ -100,6 +101,46 @@ hr {
 }
 
 .hero .hero-heading {
+    text-align: center;
     padding-top: 1rem;
     color: var(--dark-gray);
+}
+
+.hero .hero-heading .heading-inverted {
+    color: var(--primary-color);
+}
+
+
+/* sections */
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+}
+
+.ow {
+    background-color: var(--off-white);
+}
+
+
+/* footer */
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+}
+
+.footer .link {
+    color: white;
+}
+
+.footer ul {
+    /* this is a user agent, given by chrome so we are overriding it */
+    padding-inline-start: 0px;
 }
